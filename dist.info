@@ -1,0 +1,14 @@
+--- This file is part of LuaDist project
+
+name = "luaidl"
+version = "0.8.9beta"
+
+desc = "LuaIDL is an OMG IDL (Interface Definition Language) compiler front end, written in the Lua programming language."
+author = "Ricardo Cosme"
+license = "MIT/X11"
+url = "http://luaforge.net/projects/oil/"
+maintainer = "Peter Kapec"
+
+depends = {
+	"lua ~> 5.1"
+}
