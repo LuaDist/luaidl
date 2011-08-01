@@ -1,7 +1,7 @@
 --- This file is part of LuaDist project
 
 name = "luaidl"
-version = "0.8.9beta"
+version = "1.0.5"
 
 desc = "LuaIDL is an OMG IDL (Interface Definition Language) compiler front end, written in the Lua programming language."
 author = "Ricardo Cosme"
