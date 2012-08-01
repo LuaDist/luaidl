@@ -1,13 +1,16 @@
-# Copyright (C) 2007-2009 LuaDist.
+# Copyright (C) 2007-2012 LuaDist.
 # Created by Peter Kapec
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(luaidl NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( luaidl NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
-# Install all files and documentation
-INSTALL (FILES luaidl.lua DESTINATION ${INSTALL_LMOD})
-INSTALL (DIRECTORY luaidl DESTINATION ${INSTALL_LMOD})
+# Install all files
+install_lua_module ( luaidl luaidl.lua )
+install_lua_module ( luaidl.lex luaidl/lex.lua )
+install_lua_module ( luaidl.pre luaidl/pre.lua )
+install_lua_module ( luaidl.sin luaidl/sin.lua )
